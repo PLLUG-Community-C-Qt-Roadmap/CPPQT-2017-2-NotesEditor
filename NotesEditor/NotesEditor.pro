@@ -28,13 +28,13 @@ SOURCES += \
         mainwindow.cpp \
     texteditor.cpp \
     linkeditor.cpp \
-    dialog.cpp
+    newnotewizard.cpp
 
 HEADERS += \
         mainwindow.h \
     texteditor.h \
     linkeditor.h \
-    dialog.h
+    newnotewizard.h
 
 FORMS += \
         mainwindow.ui \

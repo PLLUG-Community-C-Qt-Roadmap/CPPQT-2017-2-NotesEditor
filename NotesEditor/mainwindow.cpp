@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "dialog.h"
+#include "newnotewizard.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -19,6 +19,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::slotAddNote()
 {
-    Dialog *addDialog = new Dialog(this);
+    NewNoteWizard *addDialog = new NewNoteWizard(this);
     addDialog->show();
 }

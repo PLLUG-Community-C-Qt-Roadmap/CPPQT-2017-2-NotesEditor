@@ -1,9 +1,9 @@
-#include "dialog.h"
+#include "newnotewizard.h"
 #include "ui_dialog.h"
 
 #include <QStateMachine>
 
-Dialog::Dialog(QWidget *parent) :
+NewNoteWizard::NewNoteWizard(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Dialog)
   , mStateMachine{new QStateMachine(this)}
@@ -29,7 +29,7 @@ Dialog::Dialog(QWidget *parent) :
     mStateMachine->start();
 }
 
-Dialog::~Dialog()
+NewNoteWizard::~NewNoteWizard()
 {
     delete ui;
 }
