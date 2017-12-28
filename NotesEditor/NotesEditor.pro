@@ -40,6 +40,6 @@ FORMS += \
         mainwindow.ui \
     texteditor.ui \
     linkeditor.ui \
-    dialog.ui
+    newnotewizard.ui
 
 STATECHARTS +=

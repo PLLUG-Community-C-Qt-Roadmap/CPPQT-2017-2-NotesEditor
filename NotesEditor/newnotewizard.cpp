@@ -1,5 +1,5 @@
 #include "newnotewizard.h"
-#include "ui_dialog.h"
+#include "ui_newnotewizard.h"
 
 #include <QStateMachine>
 
