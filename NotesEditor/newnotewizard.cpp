@@ -14,12 +14,14 @@ NewNoteWizard::NewNoteWizard(QWidget *parent) :
     page1->assignProperty(ui->descriptionLabel, "text", "Step 1");
     page1->assignProperty(ui->prevPushButton, "enabled", false);
     page1->assignProperty(ui->wizardStackedWidget, "currentIndex", 0);
+    page1->assignProperty(ui->nextPushButton, "text", "Next >");
     mStateMachine->addState(page1);
 
     QState *page2 = new QState;
     page2->assignProperty(ui->descriptionLabel, "text", "Step 2");
     page2->assignProperty(ui->prevPushButton, "enabled", true);
     page2->assignProperty(ui->wizardStackedWidget, "currentIndex", 1);
+    page2->assignProperty(ui->nextPushButton, "text", "&Finish");
     mStateMachine->addState(page2);
 
     page1->addTransition(ui->nextPushButton, &QPushButton::clicked, page2);
